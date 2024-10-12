@@ -179,7 +179,7 @@ public class MatchCards {
         cardSet = new ArrayList<Card>();
 
         for (String item : cardList) {
-            Image cardImage = new ImageIcon(getClass().getResource(String.format("./img/%s.jpg", item))).getImage();
+            Image cardImage = new ImageIcon(getClass().getResource(String.format("/img/%s.jpg", item))).getImage();
             ImageIcon cardImageIcon = new ImageIcon(
                     cardImage.getScaledInstance(cardWidth, cardHeight, java.awt.Image.SCALE_SMOOTH));
 
@@ -189,7 +189,7 @@ public class MatchCards {
 
         // double resource cards to match
         cardSet.addAll(cardSet);
-        Image cardBackImage = new ImageIcon(getClass().getResource("./img/back.jpg")).getImage();
+        Image cardBackImage = new ImageIcon(getClass().getResource("/img/back.jpg")).getImage();
         cardBackImageIcon = new ImageIcon(
                 cardBackImage.getScaledInstance(cardWidth, cardHeight, java.awt.Image.SCALE_SMOOTH));
     }
